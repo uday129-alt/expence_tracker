@@ -1,0 +1,6 @@
+# Streamlit App Dependencies
+streamlit==1.40.0
+Pillow==10.2.0
+requests==2.31.0
+python-dotenv==1.0.1
+pymongo==4.8.0

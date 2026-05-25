@@ -36,7 +36,7 @@ async function runSmokeTest() {
   try {
     // Test 1: Check API connectivity with a simple text request
     console.log('\n📝 Test 1: Basic text generation (simple model call)');
-    const textTestResponse = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent', {
+    const textTestResponse = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -77,7 +77,7 @@ async function runSmokeTest() {
     // Test 2: Check quota information
     console.log('\n📊 Test 2: Checking quota information');
     const quotaResponse = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash?key=${API_KEY}`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash?key=${API_KEY}`,
       {
         method: 'GET',
         headers: {
@@ -99,7 +99,7 @@ async function runSmokeTest() {
     const minimalBase64 = 'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg=='; // 1x1 red pixel PNG
 
     const visionResponse = await fetch(
-      'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent',
       {
         method: 'POST',
         headers: {
@@ -149,7 +149,7 @@ async function runSmokeTest() {
     for (let i = 1; i <= 5; i++) {
       try {
         const rapidResponse = await fetch(
-          'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent',
+          'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent',
           {
             method: 'POST',
             headers: {

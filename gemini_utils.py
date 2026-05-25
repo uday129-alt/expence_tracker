@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 GEMINI_API_KEY = os.getenv('NEXT_PUBLIC_GEMINI_API_KEY')
-GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
 
 
 def analyze_receipt_image(base64_image: str) -> Dict[str, Any]:

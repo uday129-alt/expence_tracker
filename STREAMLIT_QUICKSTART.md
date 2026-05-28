@@ -25,8 +25,8 @@ pip install -r requirements.txt
 
 Make sure your `.env` file contains:
 ```
-NEXT_PUBLIC_GEMINI_API_KEY=AIzaSyBPexgOZ13XGxeQPH32hC0BXPkXHxeYp7c
-MONGODB_URI=mongodb+srv://23eg110a51_db_user:uday@mydb.rxhnfgg.mongodb.net/
+NEXT_PUBLIC_GEMINI_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxx
+MONGODB_URI=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
 ### Step 3: Run the App
